@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Iluminado - Criando Persona</title>
+
+
+  </head>
+  <body>
+    
+    <header class="container">
+        <div class="row">
+            <div class="col-4 mx-auto text-center">
+                <img class="mx-auto d-block" src="img/logo-iluminado.png">  
+            </div>
+        </div>
+    </header>
+
+    <div class="container painel" id="criarPersona">
+        <h1>Persona do Cliente</h1>
+        <hr />
+
+        <h2>Criando a persona</h2>
+
+        <div class="form-group">
+            <label for="nome"> 1 - Dê um nome a persona?</label>
+            <input class="form-control" type="text" id="nome">
+        </div>
+
+        <div class="form-group">
+            <label for="cargo"> 2 - Qual o cargo que ocupa?</label>
+            <p class="text-muted">Ex: Gerente de Marketing, Vendedor, Consultor de Empresa, Professor, Faxineira, Dona de Casa, Aposentada, Secretária, Empresária</p>
+            <input class="form-control" type="text" id="cargo">
+        </div>
+
+        <div class="form-group">
+            <label for="idade"> 3 - Qual a idade da persona?</label>
+            <input class="form-control" type="number" id="idade">
+        </div>
+
+        <div class="form-group">
+            <label for="regiao"> 4 - Qual a região de moradia da sua persona?</label>
+            <input class="form-control" type="text" id="regiao">
+        </div>
+
+        <div class="form-group">
+            <label for="sexo"> 5 - Qual o sexo da persona?</label>
+            <select class="form-control" id="sexo">
+                <option></option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="escolaridade"> 6 - Qual o nível de escolaridade da persona?</label>
+            <select class="form-control" id="escolaridade">
+                <option></option>
+                <option>Não alfabetizado</option>
+                <option>Ensino Fundamental</option>
+                <option>Ensino Médio</option>
+                <option>Graduado</option>
+                <option>Pós-Graduação</option>
+                <option>Mestrado</option>
+                <option>Doutorado</option>
+                <option>Pós-Doutorado</option>
+                <option>PHD</option>        
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="papel"> 7 - Qual o papel da persona no processo da compra?</label>
+            <p class="text-muted">Ex: Ela quem decide, Decisor no processo de compra, Influenciador no processo de compra</p>
+            <input class="form-control" type="text" id="papel">
+        </div>
+
+        <div class="form-group">
+            <label for="renda"> 8 - Qual a renda mensal da sua persona?</label>
+            <input class="form-control" id="renda" class="renda" type="text" onkeypress="$(this).mask('R$ #.##0,00', {reverse: true});">
+        </div>
+
+        <div class="form-group">
+            <label for="comunicacao"> 9 - Qual o tom de voz da sua comunicação com a persona?</label>
+            <p class="text-muted">Ex: Informal, Descontraído, Formal</p>
+            <input class="form-control" type="text" id="comunicacao">
+        </div>
+
+        <div class="form-group">
+            <label for="canais"> 10 - Quais os canais de comunicação mais usados pela sua persona?</label>
+            <p class="text-muted">Ex: Revista, Facebook, WhatsApp, Instagram, Televisão</p>
+            <input class="form-control" type="text" id="canais">
+        </div>
+
+        <div class="form-group">
+            <label for="assunto"> 11 - Que tipo de assunto interessa a ele sobre o seu setor?</label>
+            <p class="text-muted">Ex: Novela, Jornal, Religião</p>
+            <input class="form-control" type="text" id="assunto">
+        </div>
+
+        <div class="form-group">
+            <label for="assuntoInternet"> 12 - Liste os principais assuntos que seu persona procura na internet?</label>
+            <textarea class="form-control" id="assuntoInternet" rows="3"></textarea>
+        </div>        
+
+        <div class="form-group">
+            <label for="desafio"> 13 - Quais são seus maiores desafio?</label>
+            <textarea class="form-control" id="desafio" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="medo"> 14 - Qual seu maior medo?</label>
+            <textarea class="form-control" id="medo" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="decicao"> 15 - Quem influencia nas suas decisões?</label>
+            <textarea class="form-control" id="decicao" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="problemas"> 16 - Quais os principais problemas que a persona está tentando resolver?</label>
+            <textarea class="form-control" id="problemas" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="empresaResolve"> 17 - Liste como você ou sua empresa podem resolver os problemas da persona?</label>
+            <textarea class="form-control" id="empresaResolve" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="personaResolve"> 18 - Como seu persona resolve estes problemas hoje?</label>
+            <textarea class="form-control" id="personaResolve" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="escolherSeuProduto"> 19 - Porque a persona escolheria seus produtos ou serviços e não dos seus concorrentes?</label>
+            <textarea class="form-control" id="escolherSeuProduto" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="principalDuvida"> 20 - Quais as principais dúvidas da persona antes de escolher os produtos ou serviços da sua empresa?</label>
+            <textarea class="form-control" id="principalDuvida" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="rotinaDiaria"> 21 - Qual a rotina diária de sua persona?</label>
+            <textarea class="form-control" id="rotinaDiaria" rows="3"></textarea>
+        </div>
+
+        <div class="form-group text-center">
+            <button type="button" id="enviar" class="btn btn-primary ">Enviar</button>
+        </div>
+        
+    </div>
+
+
+    <div class="container painel" id="resultadoPersona">
+        <h1>Resultado da Persona</h1>
+
+        <hr />
+        <div class="text-center">
+            <h3 id="Rname"></h3>
+            <p class="text-muted" id="Rregiao1"></p>
+        </div>
+        <hr />
+
+        <p>Qual o cargo que ocupa: <span id="Rcargo"></span></p>
+        <p>Qual a idade da persona: <span id="Ridade"></span></p>
+        <p>Qual a região de moradia da sua persona: <span id="Rregiao2"></span></p>
+        <p>Qual o sexo da persona: <span id="Rsexo"></span></p>
+        <p>Qual o nível de escolaridade da persona: <span id="Rescolaridade"></span></p>
+        <p>Qual o papel da persona no processo de compra: <span id="Rpapel"></span></p>
+        <p>Qual a renda mensal da sua persona: <span id="Rrenda"></span></p>
+        <p>Qual o tom de voz da sua comunicação com a persona: <span id="Rcomunicacao"></span></p>
+        <p>Quais os canais de comunicação mais usados pela sua persona: <span id="Rcanais"></span></p>
+        <p>Que tipo de assunto interessa a ele sobre o seu setor: <span id="Rassunto"></span></p>
+        <p>Liste os principais assuntos que sua persona procura na internet: <span id="RassuntoInternet"></span></p>
+        <p>Quais são seus maiores desafios: <span id="Rdesafio"></span></p>
+        <p>Qual seu maior medo: <span id="Rmedo"></span></p>
+        <p>Quem influência nas suas decisões: <span id="Rdecicao"></span></p>
+        <p>Quais os principais problemas que a persona está tentando resolver: <span id="Rproblemas"></span></p>
+        <p>Liste como você ou sua empresa podem resolver os problemas da persona: <span id="RempresaResolve"></span></p>
+        <p>Como sua persona resolve estes problemas hoje: <span id="RpersonaResolve"></span></p>
+        <p>Porque a persona escolheria seus produtos ou serviços e não dos seus concorrentes: <span id="RescolherSeuProduto"></span></p>
+        <p>Quais as principais dúvidas da persona antes de escolher os produtos ou serviços da sua empresa: <span id="RprincipalDuvida"></span></p>
+        <p>Qual a rotina diária de sua persona: <span id="RrotinaDiaria"></span></p>
+        
+
+        <div class="form-group text-center">
+            <button type="button" id="voltar" class="btn btn-success ">Voltar</button>
+        </div>
+    </div>
+
+    <footer class="container ">
+        <p class="text-center">Desenvolvido por Heitor Ogura</p>
+    </footer>
+
+
+    <script>
+        var enviar = document.getElementById("enviar");
+        var voltar = document.getElementById("voltar");
+
+        enviar.onclick = function() {
+            if(document.getElementById("nome").value == ""){
+                alert("Nome não foi preenchido!");
+            }else if(document.getElementById("regiao").value == ""){
+                alert("Região não foi preenchido!")
+            }else if(document.getElementById("cargo").value == ""){
+                alert("Cargo não foi preenchido!")
+            }else if(document.getElementById("idade").value == ""){
+                alert("Idade não foi preenchido!")
+            }else if(document.getElementById("sexo").value == ""){
+                alert("Sexo não foi preenchido!")        
+            }else if(document.getElementById("escolaridade").value == ""){
+                alert("Escolaridade não foi preenchido!")   
+            }else if(document.getElementById("papel").value == ""){
+                alert("Papel não foi preenchido!")
+            }else if(document.getElementById("renda").value == ""){
+                alert("Renda não foi preenchido!")
+            }else{
+                document.getElementById("Rname").innerText = document.getElementById("nome").value;
+                document.getElementById("Rcargo").innerText = document.getElementById("cargo").value;
+                document.getElementById("Ridade").innerText = document.getElementById("idade").value;
+                document.getElementById("Rregiao1").innerText = document.getElementById("regiao").value;
+                document.getElementById("Rregiao2").innerText = document.getElementById("regiao").value;
+                document.getElementById("Rsexo").innerText = document.getElementById("sexo").value;
+                document.getElementById("Rescolaridade").innerText = document.getElementById("escolaridade").value;
+                document.getElementById("Rpapel").innerText = document.getElementById("papel").value;
+                document.getElementById("Rrenda").innerText = document.getElementById("renda").value;
+                document.getElementById("Rcomunicacao").innerText = document.getElementById("comunicacao").value;
+                document.getElementById("Rcanais").innerText = document.getElementById("canais").value;
+                document.getElementById("Rassunto").innerText = document.getElementById("assunto").value;
+                document.getElementById("RassuntoInternet").innerText = document.getElementById("assuntoInternet").value;
+                document.getElementById("Rdesafio").innerText = document.getElementById("desafio").value;
+                document.getElementById("Rmedo").innerText = document.getElementById("medo").value;
+                document.getElementById("Rdecicao").innerText = document.getElementById("decicao").value;
+                document.getElementById("Rproblemas").innerText = document.getElementById("problemas").value;
+                document.getElementById("RempresaResolve").innerText = document.getElementById("empresaResolve").value;
+                document.getElementById("RpersonaResolve").innerText = document.getElementById("personaResolve").value;
+                document.getElementById("RescolherSeuProduto").innerText = document.getElementById("escolherSeuProduto").value;
+                document.getElementById("RprincipalDuvida").innerText = document.getElementById("principalDuvida").value;
+                document.getElementById("RrotinaDiaria").innerText = document.getElementById("rotinaDiaria").value;
+                
+                document.getElementById("criarPersona").style.display = "none";
+                document.getElementById("resultadoPersona").style.display = "block";
+            }
+        }
+
+        voltar.onclick = function() {
+            document.getElementById("criarPersona").style.display = "block";
+            document.getElementById("resultadoPersona").style.display = "none";
+        }
+
+    </script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  </body>
+</html>
